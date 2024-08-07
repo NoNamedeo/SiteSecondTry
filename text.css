@@ -1,0 +1,37 @@
+p{
+    font-family: Arial; /*se una cosa è la stessa per tutti allora la puoi mettere su questa classe paragraph generica*/
+    /*si puo anche usare per una cosa generica per tutti poi nel particolare lo puoi modificare specificatamente sulle singole classi*/
+}
+
+.one{
+    font-size:18px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    width:300px;
+    line-height: 24px;
+    color:grey;
+    margin-bottom:0;
+}
+.two{
+    font-size:18px;
+    margin-top:0;
+}
+.three{
+    margin-top:10px;
+    background-color: brown;
+    color: aliceblue;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-family: Roboto;
+    
+}
+.ipsus{
+    /*parola specifica del testo txtelem*/
+    text-decoration:underline;
+}
+.ipsus:hover{
+    /*parola specifica del testo txtelem*/
+    color:brown;
+}

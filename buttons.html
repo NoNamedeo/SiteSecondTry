@@ -1,0 +1,55 @@
+<button class="sub">SUBSCRIBE</button> <!--usi le classi per specificare tra i bottoni-->
+<style>
+    .sub{ /*.sub si riferisce al bottonoe tipo youtube, se era button lo usi per tutti i bottoni*/
+        background-color: rgb(197, 0, 0);
+        color:#f0f8ff; /*of the text*/
+        border:none; 
+        /*height:36px;
+        width:105px;*/ /*non è una buona idea usare height e width perche non scalano con il testo, usa invece padding...*/
+        padding-left:17px;
+        padding-right:17px;
+        padding-top:10px;
+        padding-bottom:10px;
+        border-radius:2px; /*spigoli arrotondati*/ /*con un pixelaggio maggiore puoi fare tutto il bordo dx e sx arrotondato*/
+        cursor:pointer;/*fa diventare il mouse una manina quando sei sopra al bottone*/
+        margin-right:8px;/*spazio alla destra del bottone*/
+        transition: opacity 1s; /*transizione di opacità (o altro) che deve durare 1s*/
+        /*vertical-align: top;*/ /*questo per allineare in base al bordo superiore dei bottoni*/
+    }
+    .sub:hover{ /*cose che subentrano quando hoveri ossia passi sopra al bottone*/
+        /*background-color: rgb(157, 1, 1);*/  /*puoi modificare il background e altra roba a piacimento per quando ci passi sopra*/
+        opacity:0.7; /*lo rende piu chiaro (è tra 0 e 1)*/
+        
+    }
+    .sub:active{ /*cose che subentrano quando activi ossia clicchi sopra al bottone*/
+        /*background-color: rgb(107, 1, 1);*/  /*puoi modificare il background e altra roba a piacimento per quando ci clicchi sopra*/
+        opacity:0.5;
+    }
+    .jo{
+        background-color: rgb(255, 255, 255);
+        border-color:aqua;
+        border-style:solid;
+        border-width:1px;
+        margin-right:8px; /*spazio alla destra del bottone*/
+        transition: background-color 1s, color 1s; /*puoi mettere piu proprietà in transizione con una virgola*/
+    }
+    .jo:hover{
+        background-color:blue;
+        color:white;
+    }
+    .tw{
+        border-radius:22px;
+        font-weight:bold;
+        font-size:15px; /*quanto è grande la scritta*/
+        transition: box-shadow 0.5s; 
+    }
+    .tw:hover{
+        box-shadow: -10px 10px 10px rgba(144, 144, 144, 0.288); /*l'ombra sotto al bottone, i numeri indicano la componente orizzontale,verticale e il blur (sfocatura)*/
+        /*rgba mi intende il colore rgb classico con i primi quattro numeri e poi con l'ultimo numero mi va a prendere l'opacità*/
+    }
+</style>
+<p>paragraph with things in it</p>
+<a href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=258s" target="_blank">paragraph with things in it</a> 
+<!--testo ancora tipo, serve per link-->
+<button class="jo">JOIN</button>
+<button class="tw">Tweet</button>

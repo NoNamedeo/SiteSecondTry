@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!-- ogni file inizia con questi robi i suppose: DOCTYPE, html,head,body--> 
+<html>
+    <head> <!-- contiene tutte le cose che sono invisibili -->
+        <title>
+            text site (titolo della scheda)
+        </title>
+
+        <!-- questo è un font copiato da google fonts per il nostro sito, ci permette di usare il nuovo font "roboto" -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <!-- possiamo trasportare tutta la roba di CSS (la roba che ora stava dentro <style>) in un altro file e linkarla con <link> -->
+        <!-- che non ha bisogno di parentesi <\link> finale (void element), se usi dei folder allora devi mettere folder/name.css-->    
+        <link rel="stylesheet" href="text.css"> 
+
+    </head> 
+    <body>
+
+        <p class="one">
+            lorem ipsus bla bla car &#183; bla bla woo wee wee ipsus <!-- &#183; indica il puntino, le robe speciali si fanno cosi -->
+        </p>
+        
+        <p class="two">
+            lorem ipsus bla bla car &#10003; bla bla ipsus 
+        </p>
+        
+        <p class="three">
+            lorem ipsus bla bla swingo bla bla car &#62; bla bla ipsus <!-- &#62; indica > per non venir confusi con altri elementi di HTML -->
+        </p>
+        
+        <p class="txtelem">
+            lorem ipsus <strong>bla bla</strong> swingo <u>bla</u> bla car &#62; bla bla <span class="ipsus">ipsus</span> 
+            <!-- si usano dei text elements per modificare solo alcune robe e non tutto, strong mette in grassetto, u sottolinea -->
+            <!-- span non fa nulla, pero è utile per dichiarare classi su alcune parole, per aggiungere piu spazi basta mettere un margine -->
+            <!--un margine va obv su style del css -->
+            <!-- -->
+        </p>
+
+    </body> <!-- contiene tutte le cose che sono visibili -->
+</html>
+

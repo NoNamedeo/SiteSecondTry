@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html>
+    <head> 
+
+    </head> 
+    <body style="padding-bottom: 1000px">
+        <div style="
+            display:grid;
+            grid-template-columns:100px 100px; 
+            /*creo una griglia, gli elementi all'interno di questo div sono come elementi di una matrice 1x2 ora*/ 
+            /*una griglia in questo caso mantiene l'altezza, il secondo è piu alto quindi il primo si allunga*/      
+        ">
+            <div style="background-color:aqua">div1</div> <!--l'attributo style permette di usare CSS direttamente dentro le parentesi del div-->
+            <div style="background-color:lightpink">div2<p>paragraph</p></div>
+        </div>
+
+        <div style="
+            margin-top:30px;
+            display:grid;
+            grid-template-columns:100px 100px 200px;     
+            /* se grid ecc column ha piu colonne vabbe, se ne ha di meno degli elementi sotto allora gli elementi in piu stanno fuori la griglia*/
+            /*principale e viene aggiunta una riga per contenerli*/
+        ">
+            <div style="background-color:aqua">div1</div> 
+            <div style="background-color:lightpink">div2<p>paragraph</p></div>
+            <div style="background-color:aqua">div1</div>
+        </div>
+
+        <div style="
+        margin-top:30px;
+        display:grid;
+        grid-template-columns:100px 1fr; 
+        /*fr intende free space ossia che la seconda colonna occupa tutto lo spazio libero*/ 
+        /**/      
+    ">
+            <div style="background-color:aqua">div1</div>
+            <div style="background-color:lightpink">div2<p>paragraph</p></div>
+        </div>
+
+        <div style="
+        margin-top:30px;
+        display:grid;
+        grid-template-columns:100px 1fr 1fr; 
+        /*se uso due colonne con 1fr allora esse occuperanno tutto lo spazio disponibile, metà l'una metà l'altra*/ 
+        /*poi se una colonna a 2fr e una ne ha 1fr allora una occupera due terzi e una un terzo ecc*/      
+    ">
+            <div style="background-color:aqua">div1</div> 
+            <div style="background-color:lightpink">div2<p>paragraph</p></div>
+            <div style="background-color:aqua">div3</div>
+        </div>
+
+        <div style="
+        margin-top:30px;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr; 
+        column-gap:20px;
+        row-gap:40px;
+        /*creiamo una griglia 2x3 e mettiamo degli spazi con column gap e row gap*/ 
+        /**/      
+    ">
+            <div style="background-color:aqua;height:200px;">div1</div>
+            <div style="background-color:lightpink;height:200px;">div2<p>paragraph</p></div>
+            <div style="background-color:aqua;height:200px;">div1</div>       
+            <div style="background-color:lightpink;height:200px;">div2<p>paragraph</p></div>
+            <div style="background-color:aqua;height:200px;">div1</div>
+            <div style="background-color:lightpink;height:200px;">div2<p>paragraph</p></div>
+        </div>
+
+    </body> 
+</html>
